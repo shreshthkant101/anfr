@@ -119,4 +119,16 @@ function keyPressed(){
        
     }
 }
-
+function mousePressed(){
+ 
+    if(count == 1){
+       slingshot.attach(bird2.body);
+       Matter.Body.setPosition(bird2.body,{x:200,y:50});
+    }
+    if(count == 2){
+        slingshot.attach(bird3.body);
+        Matter.Body.setPosition(bird3.body,{x:200,y:50});
+    }
+       
+    
+}
